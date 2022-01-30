@@ -18,10 +18,13 @@ header {
 
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
 }
 
-header h2 {
+header h2,
+strong {
   color: #f6f2f2;
 }
 
@@ -42,44 +45,24 @@ footer div {
   align-items: center;
   justify-content: center;
   color: #f6f2f2;
-}
-
-footer div ul {
-  list-style: none;
-  text-align: left;
-  width: 60px;
-  margin-top: 20px;
+  padding: 0 10px;
 }
 
 main {
   height: calc(100vh - 176px - 64px);
   padding: 60px 100px;
-  background-color: #f6f2f2;
-
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-main div {
-  margin-left: 24px;
-}
-
-main .content-main {
-  display: flex;
-
-  color: rgba(5, 4, 4, 0.835);
-}
-
-.content-main img {
-  width: 400px;
-  height: 300px;
-  border: 5px solid #800080;
-  border-radius: 4px;
+main input {
+  width: 300px;
+  height: 48px;
 }
 
 main button {
-  width: 200px;
+  width: 300px;
   height: 48px;
 
   background-color: #800080;
@@ -88,7 +71,7 @@ main button {
 
   border-radius: 2px;
 
-  margin-top: 40px;
+  margin-top: 10px;
 
   cursor: pointer;
 }
