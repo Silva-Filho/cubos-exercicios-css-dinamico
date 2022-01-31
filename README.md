@@ -10,6 +10,9 @@
 2. ex2 - Trabalhar com LocalStorage para armazenar informações do usuário atual.
     - Nesse exercício você precisa, fazer com que o usuário digite o seu nome, para então poder dar as boas vindas ao usuário no header. Porém você precisa fazer com que o nome digitado fique sempre salvo, para que quando o usuário entrar no site em outro momento, a mensagem de boas vindas já esteja preenchida com o nome do usuário digitado anteriormente.
 
+3. ex3 - Trocar dinamicamente o valor de uma variável css
+    - Nesse exercício você precisará trocar dinamicamente (pelo javascript) o valor de uma varíavel do css, a estrutura já está montada. Resumidamente, quando você clicar em um quadrado a cor desse quadrado deve ser atribuida ao background do body.
+
 ---
 
 Preencha a checklist para fazer os exercícios:
