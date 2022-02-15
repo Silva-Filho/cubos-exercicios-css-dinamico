@@ -9,11 +9,14 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 100vh;
+  --cor-roxa: #800080;
+  --cor-branca: #f6f2f2;
+  --cor-preta: rgba(5, 4, 4, 0.835);
 }
 
 header {
   width: 100%;
-  background-color: #800080;
+  background-color: var(--cor-roxa);
   height: 64px;
 
   display: flex;
@@ -22,12 +25,12 @@ header {
 }
 
 header h2 {
-  color: #f6f2f2;
+  color: var(--cor-branca);
 }
 
 footer {
   height: 176px;
-  background-color: #800080;
+  background-color: var(--cor-roxa);
 
   display: flex;
   justify-content: space-between;
@@ -41,7 +44,7 @@ footer div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #f6f2f2;
+  color: var(--cor-branca);
 }
 
 footer div ul {
@@ -54,7 +57,7 @@ footer div ul {
 main {
   height: calc(100vh - 176px - 64px);
   padding: 60px 100px;
-  background-color: #f6f2f2;
+  background-color: var(--cor-branca);
 
   display: flex;
   flex-direction: column;
@@ -68,13 +71,13 @@ main div {
 main .content-main {
   display: flex;
 
-  color: rgba(5, 4, 4, 0.835);
+  color: var(--cor-preta);
 }
 
 .content-main img {
   width: 400px;
   height: 300px;
-  border: 5px solid #800080;
+  border: 5px solid var(--cor-roxa);
   border-radius: 4px;
 }
 
@@ -82,8 +85,8 @@ main button {
   width: 200px;
   height: 48px;
 
-  background-color: #800080;
-  color: #f6f2f2;
+  background-color: var(--cor-roxa);
+  color: var(--cor-branca);
   border: none;
 
   border-radius: 2px;
