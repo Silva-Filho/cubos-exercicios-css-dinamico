@@ -1,25 +1,34 @@
 const botaoSalvar = document.querySelector("#btn-save");
-
+const botaoLimpar = document.querySelector("#btn-clean");
 const messagemBoasVindas = document.querySelector("#welcome");
+const inputNome = document.querySelector("#input-name");
 
-/* let nomeSalvo = localStorage.nome; */
-/* nomeSalvo = nomeSalvo !== undefined ? nomeSalvo.trim() : undefined */
-let nomeSalvo = localStorage.getItem("nome");
-nomeSalvo = nomeSalvo !== null ? nomeSalvo.trim() : null;
-
-if (nomeSalvo) {
-    messagemBoasVindas.textContent = `Seja bem vindo, ${nomeSalvo}!`;
-}
+const nomeSalvo = localStorage.getItem("nome");
+messagemBoasVindas.innerText = nomeSalvo ? 
+    `Seja bem vindo, ${nomeSalvo}!` :
+    "";
 
 const salvarNome = () => {
-    const inputNome = document.querySelector("#input-name");
-    const nome = inputNome.value;
+    const nome = inputNome?.value;
+
+    if (!nome) {
+        return;
+    }
     
     if (nome.trim()) {
         localStorage.setItem("nome", nome);
-        messagemBoasVindas.textContent = `Seja bem vindo, ${nome}!`;
+        messagemBoasVindas.innerText = `Seja bem vindo, ${nome}!`;
+        inputNome.value = "";
     }
 };
 
-botaoSalvar.addEventListener("click", salvarNome);
+botaoSalvar?.addEventListener("click", salvarNome);
 
+const limparNome = () => {
+    /* localStorage.clear(); */
+    localStorage.removeItem("nome");
+    messagemBoasVindas.innerText = "";
+    /* inputNome.value = ""; */
+};
+
+botaoLimpar?.addEventListener("click", limparNome);
