@@ -1,83 +1,78 @@
+:root {
+    --cor-fundo: #800080;
+    --cor-texto: #f6f2f2;
+}
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  --cor-fundo: #800080;
-  --cor-texto: #f6f2f2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header {
-  width: 100%;
-  background-color: var(--cor-fundo);
-  height: 64px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  padding: 0 20px;
+    width: 100%;
+    height: 64px;
+    padding: 0 20px;    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    background-color: var(--cor-fundo);
 }
 
 header h2,
 strong {
-  color: var(--cor-texto);
-}
-
-footer {
-  height: 176px;
-  background-color: var(--cor-fundo);
-
-  display: flex;
-  justify-content: space-between;
-}
-
-footer div {
-  height: 100%;
-  width: 32%;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--cor-texto);
-  padding: 0 10px;
+    color: var(--cor-texto);
 }
 
 main {
-  height: calc(100vh - 176px - 64px);
-  padding: 60px 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    height: calc(100vh - 176px - 64px);
+    padding: 60px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main input {
-  width: 300px;
-  height: 48px;
+    width: 300px;
+    height: 48px;
 }
 
 main button {
-  width: 300px;
-  height: 48px;
-
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
-  border: none;
-
-  border-radius: 2px;
-
-  margin-top: 10px;
-
-  cursor: pointer;
+    margin-top: 10px;
+    width: 300px;
+    height: 48px;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 main button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
+}
+
+footer {
+    height: 176px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-fundo);
+}
+
+footer div {
+    height: 100%;
+    width: 32%;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--cor-texto);
 }
